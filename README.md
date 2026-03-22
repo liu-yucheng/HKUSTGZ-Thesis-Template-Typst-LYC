@@ -1,38 +1,37 @@
-# HKUST Thesis Typst
+# HKUST-GZ-Thesis-Typst-Template
 
-[中文说明](README_CN.md)
+HKUST (GZ) thesis Typst template (variant LYC).
 
-[![LICENSE](https://img.shields.io/github/license/HKFoggyU/hkust-thesis-typst)](https://www.latex-project.org/lppl/lppl-1-3c/)
-[![STARS](https://img.shields.io/github/stars/HKFoggyU/hkust-thesis-typst)](https://github.com/HKFoggyU/hkust-thesis-typst/stargazers)
-[![RELEASE](https://github.com/HKFoggyU/hkust-thesis-typst/actions/workflows/release.yml/badge.svg)](https://github.com/HKFoggyU/hkust-thesis-typst/releases)
+# Usage
 
-HKUST Thesis template for RPG students implemented with [Typst](https://typst.app/).
+- Install [Typst](https://github.com/typst/typst).
+- Install [VSCode](https://code.visualstudio.com/).
+- Install [Tinymist Typst VSCode Extension](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist).
+- Install [Typst Companion VSCode Extension](https://marketplace.visualstudio.com/items?itemName=CalebFiggers.typst-companion).
+- Open [./thesis/mythesis.typ](./thesis/mythesis.typ) in VSCode.
+- Click "Show exported PDF" in the top-right corner to compile.
+- Edit ".typ" and ".bib" files to add custom contents.
 
-Much faster than its LaTeX counterpart: [hkust-thesis](https://github.com/HKFoggyU/hkust-thesis).
+# References
 
-## Getting started
+- [@HKFoggyU, hkust-thesis-typst](https://github.com/HKFoggyU/hkust-thesis-typst)
+  - Permitted to use under the [LPPL-1.3c License](https://www.latex-project.org/lppl/lppl-1-3c.txt).
 
-- Install [Visual Studio Code](https://code.visualstudio.com/) and an extension [Tinymist Typst](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist)
-- Download this thesis template from [GitHub Release zip file](https://github.com/HKFoggyU/hkust-thesis-typst/releases/latest), unzip it.
-- Open the unzipped folder with Visual Studio Code.
-- Open the file `mythesis.typ`, click the "Preview" on top.
-- Read the example chapters and write.
+# Copyright
+## Textual and Code Contents
 
-## Contributions
+```
+Copyright (C) 2024-2025 Yucheng Liu. Under the AGPL 3.0 License.
+AGPL 3.0 License: https://www.gnu.org/licenses/agpl-3.0.txt .
+```
 
-If you find any problems or have any suggestions, please file an issue or PR.
+- [The AGPL 3.0 License.](./license)
 
-## Disclaimer
+## Non-textual or Non-code Contents
 
-FYTGS doesn't provide any template for thesis submission. They only emphasize that the submitted PDF file should meet the requirements in the [RPG Handbook](https://fytgs.hkust.edu.hk/academics/Academic-Regulations-and-Requirements/Handbook-for-Research-Postgraduate-Studies/guidelines-thesis-preparation).
+```
+Copyright (C) 2024-2025 Yucheng Liu. Under the CC-BY-SA 4.0 License.
+CC-BY-SA 4.0 License: https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt .
+```
 
-This template has tried its best to follow the above requirements in the RPG Handbook and also the formatting instructions of the sample pages ([MPhil](https://fytgs.hkust.edu.hk/system/files/thesis_sample_page_mphil.pdf)/[PhD](https://fytgs.hkust.edu.hk/system/files/thesis_sample_page_phd.pdf)/[DBA](https://fytgs.hkust.edu.hk/system/files/thesis_sample_page_dba.pdf)) provided by the RPG Handbook. However, this template takes no responsibility for any potential inconsistency.
-
-## License
-
-LaTeX Project Public License (version 1.3c)
-
-## Acknowledgements
-
-This project has partially referred to [`` modern-nju-thesis ``](https://github.com/nju-lug/modern-nju-thesis).
-
+- [The CC-BY-SA 4.0 License.](./license-2)
