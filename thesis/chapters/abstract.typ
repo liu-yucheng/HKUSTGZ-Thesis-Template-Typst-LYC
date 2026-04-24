@@ -1,3 +1,3 @@
 /* Abstract. */
 
-\<Abstract\>.
+\<Abstract\> #footnote[\<footnote\>].
