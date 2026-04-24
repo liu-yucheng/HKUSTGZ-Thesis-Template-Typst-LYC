@@ -3,8 +3,7 @@
 #import "/thesis/template/imports.typ": *
 #import "/thesis/template/styles.typ": *
 
-// No heading is required because it comes with one already.
-= List of Publications <appendix-list-of-pubs>
+= List of Publications <list-of-pubs>
 
 #set par(leading: line-spacing.bib, spacing: line-spacing.bib)
 

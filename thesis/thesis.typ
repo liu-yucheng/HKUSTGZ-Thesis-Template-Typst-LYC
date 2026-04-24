@@ -6,6 +6,14 @@
 
 #show: global-style
 #show: alexandria(prefix: "bib-", read: path => read(path))
+#show footnote.entry: content => {
+  set align(left)
+  content
+} // end #show footnote.entry
+#set footnote.entry(separator: [
+  #set align(left)
+  #line(length: 35%, stroke: 0.5pt)
+]) // end #set footnote.entry
 #title-page()
 #abstract-page()[#include "/thesis/chapters/abstract.typ"]
 #auth-page()
@@ -19,8 +27,8 @@
 #show: main-style
 #include "/thesis/chapters/main.typ"
 
-#show: ref-page-style
-#include "/thesis/chapters/refs.typ"
+#show: bib-and-refs-style
+#include "/thesis/chapters/bib-and-refs.typ"
 
 #show: appendix-style
 #include "/thesis/chapters/appendix-list-of-pubs.typ"

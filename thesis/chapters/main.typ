@@ -1,29 +1,29 @@
 /* Main contents. */
 
-= Introduction
+= Introduction <intro>
 
 #include "/thesis/chapters/main/inrto.typ"
 
-= Literature Review
+= Literature Review <lit-review>
 
 #include "/thesis/chapters/main/lit-review.typ"
 
-= Methodologies
+= Methodologies <methods>
 
 #include "/thesis/chapters/main/methods.typ"
 
-= Experiments
+= Experiments <experiments>
 
 #include "/thesis/chapters/main/experiments.typ"
 
-= Discussions
+= Discussions <discussions>
 
 #include "/thesis/chapters/main/discussions.typ"
 
-= Limitations
+= Limitations <limitations>
 
 #include "/thesis/chapters/main/limitations.typ"
 
-= Conclusions
+= Conclusions <conclusions>
 
 #include "/thesis/chapters/main/conclusions.typ"
