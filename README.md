@@ -1,4 +1,4 @@
-# HKUST-GZ-Thesis-Typst-Template
+# HKUSTGZ-Thesis-Template-Typst-LYC
 
 HKUST (GZ) thesis Typst template (variant LYC).
 
@@ -8,9 +8,17 @@ HKUST (GZ) thesis Typst template (variant LYC).
 - Install [VSCode](https://code.visualstudio.com/).
 - Install [Tinymist Typst VSCode Extension](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist).
 - Install [Typst Companion VSCode Extension](https://marketplace.visualstudio.com/items?itemName=CalebFiggers.typst-companion).
-- Open [./thesis/mythesis.typ](./thesis/mythesis.typ) in VSCode.
+- Open directory [./](./) (this repository) as a project with VSCode.
+- Open file [./thesis/thesis.typ](./thesis/thesis.typ) with VSCode.
 - Click "Show exported PDF" in the top-right corner to compile.
-- Edit ".typ" and ".bib" files to add custom contents.
+  - If you use a command-line interface, you can compile with command `typst compile --root <path-> <path->/thesis/thesis.typ` where `<path->` is `<path-to-this-repository>`.
+- Edit `*.typ` and `*.bib` files to add custom contents.
+
+# Notes
+
+- The cause of `error: array index out of bounds (index: 0, len: 0) and no default value was specified @preview/alexandria:0.2.2\src\state.typ:117:20 help: error occurred in this call of function get-citation @preview/alexandria:0.2.2\src\lib.typ:19:32` is 2 or more invocations of `#show: alexandria(prefix: "bib-", read: path => read(path))` throughout the project.
+  - :warning: You need to make sure that for each `prefix`, you should **only invoke `#show: alexandria(prefix: prefix, read: path => read(path))` for once** throughout the project, no matter if the invocation is explicit or implicit.
+  - For the same `prefix`, multiple invocations of `#show: alexandria(prefix: prefix, read: path => read(path))` can occur implicitly in composite `show` rule applications.
 
 # References
 
